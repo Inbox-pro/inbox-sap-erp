@@ -9,7 +9,7 @@ interface InboxERPLogoProps {
   iconOnly?: boolean;
 }
 
-export const InboxERPLogo: React.FC<InboxERPLogoProps> = ({
+export const GangaERPLogo: React.FC<InboxERPLogoProps> = ({
   className = '',
   size = 'md',
   showSubtitle = true,
@@ -34,8 +34,8 @@ export const InboxERPLogo: React.FC<InboxERPLogoProps> = ({
   const t = textSizes[size];
 
   return (
-    <div id="inbox-erp-logo" className={`flex items-center gap-3 select-none ${className}`}>
-      {/* Custom Vector Icon replicating the Inbox Envelope with paper & dual-tone flaps */}
+    <div id="ganga-erp-logo" className={`flex items-center gap-3 select-none ${className}`}>
+      {/* Custom Vector Icon with enterprise flow & dual-tone flaps */}
       <div className="relative shrink-0 flex items-center justify-center">
         <svg
           width={s.w}
@@ -85,7 +85,7 @@ export const InboxERPLogo: React.FC<InboxERPLogoProps> = ({
         </svg>
       </div>
 
-      {/* Brand Typography & Changed Badge "SAP-ERP" */}
+      {/* Brand Typography & Badge "Ganga ERP" */}
       {!iconOnly && (
         <div className="flex flex-col leading-tight">
           <div className="flex items-center gap-1.5">
@@ -94,12 +94,12 @@ export const InboxERPLogo: React.FC<InboxERPLogoProps> = ({
                 inverted ? 'text-white' : 'text-slate-900'
               } ${t.title}`}
             >
-              Inbox
+              Ganga
             </span>
             <span
-              className={`font-bold tracking-wider rounded-md border border-amber-300 bg-amber-100/90 text-amber-900 uppercase shadow-xs ${t.badge}`}
+              className={`font-bold tracking-wider rounded-md border border-blue-300 bg-blue-100 text-blue-900 uppercase shadow-xs ${t.badge}`}
             >
-              SAP-ERP
+              ERP
             </span>
           </div>
 
@@ -121,3 +121,6 @@ export const InboxERPLogo: React.FC<InboxERPLogoProps> = ({
     </div>
   );
 };
+
+export const InboxERPLogo = GangaERPLogo;
+

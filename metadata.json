@@ -1,6 +1,6 @@
 {
-  "name": "Enterprise ERP Solution – Demo / POC",
-  "description": "Enterprise-grade ERP demonstration showcasing connected end-to-end workflows across Sales, Procurement, Inventory, Finance, HR, and Operations.",
+  "name": "Ganga ERP Solution – Demo / POC",
+  "description": "Ganga ERP enterprise-grade solution showcasing connected end-to-end workflows across Sales, Procurement, Inventory, Finance, HR, and Operations.",
   "requestFramePermissions": [],
   "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
 }

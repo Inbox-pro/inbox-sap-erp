@@ -204,6 +204,32 @@ interface ERPContextType {
 const ERPContext = createContext<ERPContextType | undefined>(undefined);
 
 export const ERPProvider: React.FC<{ children: React.ReactNode }> = ({ children }) => {
+  // Theme state
+  const [theme, setTheme] = useState<'light' | 'dark'>(() => {
+    if (typeof window !== 'undefined') {
+      const savedTheme = localStorage.getItem('ganga_erp_theme');
+      if (savedTheme === 'dark' || savedTheme === 'light') return savedTheme;
+      return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+    }
+    return 'light';
+  });
+
+  useEffect(() => {
+    if (typeof window !== 'undefined') {
+      const root = document.documentElement;
+      if (theme === 'dark') {
+        root.classList.add('dark');
+      } else {
+        root.classList.remove('dark');
+      }
+      localStorage.setItem('ganga_erp_theme', theme);
+    }
+  }, [theme]);
+
+  const toggleTheme = () => {
+    setTheme((prev) => (prev === 'dark' ? 'light' : 'dark'));
+  };
+
   // Current session & auth state
   const [currentUser, setCurrentUser] = useState<User>(demoUsers[0]); // Default to Admin
   const [isLoggedIn, setIsLoggedIn] = useState<boolean>(true);
@@ -450,8 +476,11 @@ export const ERPProvider: React.FC<{ children: React.ReactNode }> = ({ children 
   };
 
   // Switch Role / Login
-  const login = (role: UserRole) => {
-    const match = demoUsers.find((u) => u.role === role) || demoUsers[0];
+  const login = (roleOrEmail?: UserRole | string, _password?: string) => {
+    const targetRole = roleOrEmail || 'ADMIN';
+    const match =
+      demoUsers.find((u) => u.role === targetRole || u.email.toLowerCase() === String(targetRole).toLowerCase()) ||
+      demoUsers[0];
     setCurrentUser(match);
     setIsLoggedIn(true);
     showToast('info', 'Logged In', `Switched active session to ${match.name} (${match.role})`);
@@ -1936,6 +1965,9 @@ export const ERPProvider: React.FC<{ children: React.ReactNode }> = ({ children 
   return (
     <ERPContext.Provider
       value={{
+        theme,
+        setTheme,
+        toggleTheme,
         currentUser,
         setCurrentUser,
         isLoggedIn,

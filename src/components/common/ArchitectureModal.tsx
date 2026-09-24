@@ -25,7 +25,7 @@ export const ArchitectureModal: React.FC<ArchitectureModalProps> = ({ isOpen, on
     <Modal
       isOpen={isOpen}
       onClose={onClose}
-      title="Enterprise ERP System Architecture & Technical Specifications"
+      title="Ganga ERP System Architecture & Technical Specifications"
       subtitle="Modular architecture, database schemas, REST API endpoints, and production scalability roadmap"
       maxWidth="4xl"
     >
@@ -64,7 +64,7 @@ export const ArchitectureModal: React.FC<ArchitectureModalProps> = ({ isOpen, on
             <div className="p-4 bg-slate-900 text-slate-100 rounded-xl font-mono text-[11px] overflow-x-auto">
               <div className="text-emerald-400 font-bold mb-2">// Modular Monolith ERP Architecture</div>
               <pre className="text-slate-300">
-{`Enterprise ERP Platform
+{`Ganga ERP Platform
 ├── Core / Auth & RBAC (Multi-role permissions: Admin, Manager, Finance, HR, Employee)
 ├── Master Data Management
 │   ├── Organization (Company, Branches, Departments, Warehouses)

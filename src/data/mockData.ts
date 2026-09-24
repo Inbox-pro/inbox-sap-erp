@@ -25,8 +25,8 @@ import {
 
 export const initialCompany: Company = {
   id: 'COMP-001',
-  name: 'Inbox Infotech Pvt. Ltd.',
-  legalName: 'Inbox Infotech Private Limited',
+  name: 'Ganga Infotech Pvt. Ltd.',
+  legalName: 'Ganga Infotech Private Limited',
   taxId: '27AABCU9603R1ZM', // Maharashtra GSTIN
   cin: 'U72900MH2018PTC309812',
   address: 'Level 8, Tower B, Business Tech Park, Bandra Kurla Complex',
@@ -35,7 +35,7 @@ export const initialCompany: Company = {
   country: 'India',
   pincode: '400051',
   phone: '+91 22 4589 1200',
-  email: 'contact@inboxinfotech.com',
+  email: 'contact@gangaerp.com',
   currency: 'INR (₹)',
   fiscalYearStart: '01-April',
 };
@@ -118,7 +118,7 @@ export const demoUsers: User[] = [
   {
     id: 'USR-01',
     name: 'Rajesh Sharma',
-    email: 'admin@inboxerp.com',
+    email: 'admin@gangaerp.com',
     role: 'ADMIN',
     department: 'Management',
     title: 'Chief Operating Officer & System Admin',
@@ -126,7 +126,7 @@ export const demoUsers: User[] = [
   {
     id: 'USR-02',
     name: 'Deepak Varma',
-    email: 'manager@inboxerp.com',
+    email: 'manager@gangaerp.com',
     role: 'MANAGER',
     department: 'Operations & Supply Chain',
     title: 'Operations General Manager',
@@ -134,7 +134,7 @@ export const demoUsers: User[] = [
   {
     id: 'USR-03',
     name: 'Sunita Rao',
-    email: 'finance@inboxerp.com',
+    email: 'finance@gangaerp.com',
     role: 'FINANCE',
     department: 'Finance & Accounts',
     title: 'Head of Financial Control',
@@ -142,7 +142,7 @@ export const demoUsers: User[] = [
   {
     id: 'USR-04',
     name: 'Meera Iyer',
-    email: 'hr@inboxerp.com',
+    email: 'hr@gangaerp.com',
     role: 'HR',
     department: 'Human Resources',
     title: 'Lead HR Business Partner',
@@ -150,7 +150,7 @@ export const demoUsers: User[] = [
   {
     id: 'USR-05',
     name: 'Rohan Deshmukh',
-    email: 'employee@inboxerp.com',
+    email: 'employee@gangaerp.com',
     role: 'EMPLOYEE',
     department: 'Sales & Client Relations',
     title: 'Sales & Inventory Executive',
@@ -1747,22 +1747,22 @@ export const initialPayments: Payment[] = [
 ];
 
 export const initialEmployees: Employee[] = [
-  { id: 'EMP-101', employeeId: 'EMP-101', name: 'Rajesh Sharma', email: 'rsharma@inboxerp.com', phone: '+91 98201 11234', department: 'Management', designation: 'Chief Operating Officer', joiningDate: '2020-03-01', salary: 280000, status: 'Active', branchId: 'BR-MUM', reportingManager: 'Board of Directors' },
-  { id: 'EMP-102', employeeId: 'EMP-102', name: 'Deepak Varma', email: 'dvarma@inboxerp.com', phone: '+91 98202 22345', department: 'Operations', designation: 'Operations General Manager', joiningDate: '2020-06-15', salary: 195000, status: 'Active', branchId: 'BR-AHM', reportingManager: 'Rajesh Sharma' },
-  { id: 'EMP-103', employeeId: 'EMP-103', name: 'Sunita Rao', email: 'srao@inboxerp.com', phone: '+91 98203 33456', department: 'Finance', designation: 'Finance Controller & VP', joiningDate: '2020-08-01', salary: 185000, status: 'Active', branchId: 'BR-MUM', reportingManager: 'Rajesh Sharma' },
-  { id: 'EMP-104', employeeId: 'EMP-104', name: 'Meera Iyer', email: 'miyer@inboxerp.com', phone: '+91 98204 44567', department: 'HR', designation: 'Head of People & Culture', joiningDate: '2021-01-10', salary: 140000, status: 'Active', branchId: 'BR-MUM', reportingManager: 'Rajesh Sharma' },
-  { id: 'EMP-105', employeeId: 'EMP-105', name: 'Vikas Swaminathan', email: 'vswaminathan@inboxerp.com', phone: '+91 98205 55678', department: 'IT', designation: 'Chief Technology Architect', joiningDate: '2021-02-15', salary: 210000, status: 'Active', branchId: 'BR-BLR', reportingManager: 'Rajesh Sharma' },
-  { id: 'EMP-106', employeeId: 'EMP-106', name: 'Arjun Kapoor', email: 'akapoor@inboxerp.com', phone: '+91 98206 66789', department: 'Sales', designation: 'VP Enterprise Sales', joiningDate: '2021-04-01', salary: 175000, status: 'Active', branchId: 'BR-MUM', reportingManager: 'Rajesh Sharma' },
-  { id: 'EMP-107', employeeId: 'EMP-107', name: 'Rohan Deshmukh', email: 'rdeshmukh@inboxerp.com', phone: '+91 98207 77890', department: 'Sales', designation: 'Senior Account Executive', joiningDate: '2021-09-01', salary: 85000, status: 'Active', branchId: 'BR-MUM', reportingManager: 'Arjun Kapoor' },
-  { id: 'EMP-108', employeeId: 'EMP-108', name: 'Pooja Hegde', email: 'phegde@inboxerp.com', phone: '+91 98208 88901', department: 'IT', designation: 'Branch Manager & Tech Lead', joiningDate: '2022-01-15', salary: 135000, status: 'Active', branchId: 'BR-BLR', reportingManager: 'Vikas Swaminathan' },
-  { id: 'EMP-109', employeeId: 'EMP-109', name: 'Jignesh Patel', email: 'jpatel@inboxerp.com', phone: '+91 98209 99012', department: 'Operations', designation: 'Logistics Operations Lead', joiningDate: '2022-03-20', salary: 95000, status: 'Active', branchId: 'BR-AHM', reportingManager: 'Deepak Varma' },
-  { id: 'EMP-110', employeeId: 'EMP-110', name: 'Ramesh Kadam', email: 'rkadam@inboxerp.com', phone: '+91 98210 00123', department: 'Operations', designation: 'Central Warehouse Supervisor', joiningDate: '2022-05-10', salary: 65000, status: 'Active', branchId: 'BR-MUM', reportingManager: 'Deepak Varma' },
-  { id: 'EMP-111', employeeId: 'EMP-111', name: 'Ananya Roy', email: 'aroy@inboxerp.com', phone: '+91 98211 11234', department: 'Finance', designation: 'Senior Accounts Officer', joiningDate: '2022-07-01', salary: 75000, status: 'Active', branchId: 'BR-MUM', reportingManager: 'Sunita Rao' },
-  { id: 'EMP-112', employeeId: 'EMP-112', name: 'Sneha Nair', email: 'snair@inboxerp.com', phone: '+91 98212 22345', department: 'HR', designation: 'Talent Acquisition Specialist', joiningDate: '2022-11-15', salary: 62000, status: 'Active', branchId: 'BR-MUM', reportingManager: 'Meera Iyer' },
-  { id: 'EMP-113', employeeId: 'EMP-113', name: 'Karthik Raman', email: 'kraman@inboxerp.com', phone: '+91 98213 33456', department: 'Operations', designation: 'South Fulfillment In-Charge', joiningDate: '2023-02-01', salary: 70000, status: 'Active', branchId: 'BR-BLR', reportingManager: 'Deepak Varma' },
-  { id: 'EMP-114', employeeId: 'EMP-114', name: 'Tanvi Joshi', email: 'tjoshi@inboxerp.com', phone: '+91 98214 44567', department: 'Sales', designation: 'Client Success Specialist', joiningDate: '2023-04-10', salary: 55000, status: 'On Leave', branchId: 'BR-BLR', reportingManager: 'Arjun Kapoor' },
-  { id: 'EMP-115', employeeId: 'EMP-115', name: 'Amitabh Mishra', email: 'amishra@inboxerp.com', phone: '+91 98215 55678', department: 'IT', designation: 'Systems & Network Engineer', joiningDate: '2023-08-01', salary: 80000, status: 'Active', branchId: 'BR-MUM', reportingManager: 'Vikas Swaminathan' },
-  { id: 'EMP-116', employeeId: 'EMP-116', name: 'Kunal Trivedi', email: 'ktrivedi@inboxerp.com', phone: '+91 98216 66789', department: 'Operations', designation: 'Inventory Quality Inspector', joiningDate: '2023-10-15', salary: 52000, status: 'Probation', branchId: 'BR-AHM', reportingManager: 'Jignesh Patel' },
+  { id: 'EMP-101', employeeId: 'EMP-101', name: 'Rajesh Sharma', email: 'rsharma@gangaerp.com', phone: '+91 98201 11234', department: 'Management', designation: 'Chief Operating Officer', joiningDate: '2020-03-01', salary: 280000, status: 'Active', branchId: 'BR-MUM', reportingManager: 'Board of Directors' },
+  { id: 'EMP-102', employeeId: 'EMP-102', name: 'Deepak Varma', email: 'dvarma@gangaerp.com', phone: '+91 98202 22345', department: 'Operations', designation: 'Operations General Manager', joiningDate: '2020-06-15', salary: 195000, status: 'Active', branchId: 'BR-AHM', reportingManager: 'Rajesh Sharma' },
+  { id: 'EMP-103', employeeId: 'EMP-103', name: 'Sunita Rao', email: 'srao@gangaerp.com', phone: '+91 98203 33456', department: 'Finance', designation: 'Finance Controller & VP', joiningDate: '2020-08-01', salary: 185000, status: 'Active', branchId: 'BR-MUM', reportingManager: 'Rajesh Sharma' },
+  { id: 'EMP-104', employeeId: 'EMP-104', name: 'Meera Iyer', email: 'miyer@gangaerp.com', phone: '+91 98204 44567', department: 'HR', designation: 'Head of People & Culture', joiningDate: '2021-01-10', salary: 140000, status: 'Active', branchId: 'BR-MUM', reportingManager: 'Rajesh Sharma' },
+  { id: 'EMP-105', employeeId: 'EMP-105', name: 'Vikas Swaminathan', email: 'vswaminathan@gangaerp.com', phone: '+91 98205 55678', department: 'IT', designation: 'Chief Technology Architect', joiningDate: '2021-02-15', salary: 210000, status: 'Active', branchId: 'BR-BLR', reportingManager: 'Rajesh Sharma' },
+  { id: 'EMP-106', employeeId: 'EMP-106', name: 'Arjun Kapoor', email: 'akapoor@gangaerp.com', phone: '+91 98206 66789', department: 'Sales', designation: 'VP Enterprise Sales', joiningDate: '2021-04-01', salary: 175000, status: 'Active', branchId: 'BR-MUM', reportingManager: 'Rajesh Sharma' },
+  { id: 'EMP-107', employeeId: 'EMP-107', name: 'Rohan Deshmukh', email: 'rdeshmukh@gangaerp.com', phone: '+91 98207 77890', department: 'Sales', designation: 'Senior Account Executive', joiningDate: '2021-09-01', salary: 85000, status: 'Active', branchId: 'BR-MUM', reportingManager: 'Arjun Kapoor' },
+  { id: 'EMP-108', employeeId: 'EMP-108', name: 'Pooja Hegde', email: 'phegde@gangaerp.com', phone: '+91 98208 88901', department: 'IT', designation: 'Branch Manager & Tech Lead', joiningDate: '2022-01-15', salary: 135000, status: 'Active', branchId: 'BR-BLR', reportingManager: 'Vikas Swaminathan' },
+  { id: 'EMP-109', employeeId: 'EMP-109', name: 'Jignesh Patel', email: 'jpatel@gangaerp.com', phone: '+91 98209 99012', department: 'Operations', designation: 'Logistics Operations Lead', joiningDate: '2022-03-20', salary: 95000, status: 'Active', branchId: 'BR-AHM', reportingManager: 'Deepak Varma' },
+  { id: 'EMP-110', employeeId: 'EMP-110', name: 'Ramesh Kadam', email: 'rkadam@gangaerp.com', phone: '+91 98210 00123', department: 'Operations', designation: 'Central Warehouse Supervisor', joiningDate: '2022-05-10', salary: 65000, status: 'Active', branchId: 'BR-MUM', reportingManager: 'Deepak Varma' },
+  { id: 'EMP-111', employeeId: 'EMP-111', name: 'Ananya Roy', email: 'aroy@gangaerp.com', phone: '+91 98211 11234', department: 'Finance', designation: 'Senior Accounts Officer', joiningDate: '2022-07-01', salary: 75000, status: 'Active', branchId: 'BR-MUM', reportingManager: 'Sunita Rao' },
+  { id: 'EMP-112', employeeId: 'EMP-112', name: 'Sneha Nair', email: 'snair@gangaerp.com', phone: '+91 98212 22345', department: 'HR', designation: 'Talent Acquisition Specialist', joiningDate: '2022-11-15', salary: 62000, status: 'Active', branchId: 'BR-MUM', reportingManager: 'Meera Iyer' },
+  { id: 'EMP-113', employeeId: 'EMP-113', name: 'Karthik Raman', email: 'kraman@gangaerp.com', phone: '+91 98213 33456', department: 'Operations', designation: 'South Fulfillment In-Charge', joiningDate: '2023-02-01', salary: 70000, status: 'Active', branchId: 'BR-BLR', reportingManager: 'Deepak Varma' },
+  { id: 'EMP-114', employeeId: 'EMP-114', name: 'Tanvi Joshi', email: 'tjoshi@gangaerp.com', phone: '+91 98214 44567', department: 'Sales', designation: 'Client Success Specialist', joiningDate: '2023-04-10', salary: 55000, status: 'On Leave', branchId: 'BR-BLR', reportingManager: 'Arjun Kapoor' },
+  { id: 'EMP-115', employeeId: 'EMP-115', name: 'Amitabh Mishra', email: 'amishra@gangaerp.com', phone: '+91 98215 55678', department: 'IT', designation: 'Systems & Network Engineer', joiningDate: '2023-08-01', salary: 80000, status: 'Active', branchId: 'BR-MUM', reportingManager: 'Vikas Swaminathan' },
+  { id: 'EMP-116', employeeId: 'EMP-116', name: 'Kunal Trivedi', email: 'ktrivedi@gangaerp.com', phone: '+91 98216 66789', department: 'Operations', designation: 'Inventory Quality Inspector', joiningDate: '2023-10-15', salary: 52000, status: 'Probation', branchId: 'BR-AHM', reportingManager: 'Jignesh Patel' },
 ];
 
 export const initialAttendance: AttendanceRecord[] = [

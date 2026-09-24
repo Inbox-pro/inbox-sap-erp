@@ -26,7 +26,7 @@ export const LoginPage: React.FC = () => {
 
   const [activeTab, setActiveTab] = useState<'persona' | 'credentials'>('persona');
   const [selectedRole, setSelectedRole] = useState<UserRole>('ADMIN');
-  const [email, setEmail] = useState<string>('rajesh.sharma@inboxerp.com');
+  const [email, setEmail] = useState<string>('rajesh.sharma@gangaerp.com');
   const [password, setPassword] = useState<string>('Enterprise@2025');
   const [showPassword, setShowPassword] = useState<boolean>(false);
   const [selectedBranch, setSelectedBranch] = useState<string>(branches[0]?.name || 'Mumbai Corporate HQ');
@@ -145,7 +145,7 @@ export const LoginPage: React.FC = () => {
                 </div>
 
                 <h1 className="text-xl sm:text-2xl font-extrabold tracking-tight text-white">
-                  Enterprise ERP Solution
+                  Ganga ERP Solution
                 </h1>
                 <p className="mt-2 text-xs sm:text-sm text-slate-300 leading-relaxed">
                   Unified enterprise resource platform interconnecting Sales (O2C), Procurement (P2P), Warehouses, Double-Entry Finance, and Human Capital.
@@ -306,7 +306,7 @@ export const LoginPage: React.FC = () => {
                           required
                           value={email}
                           onChange={(e) => setEmail(e.target.value)}
-                          placeholder="name@inboxerp.com"
+                          placeholder="name@gangaerp.com"
                           id="login-email-input"
                           className="w-full pl-9 pr-3 py-2 bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 rounded-lg text-slate-900 dark:text-white focus:outline-hidden focus:ring-2 focus:ring-blue-500 font-medium"
                         />
@@ -398,7 +398,7 @@ export const LoginPage: React.FC = () => {
               <div className="mt-6 pt-4 border-t border-slate-100 dark:border-slate-800 text-[11px] text-slate-500 dark:text-slate-400 flex flex-col sm:flex-row items-center justify-between gap-2">
                 <div className="flex items-center gap-1.5">
                   <UserCheck className="w-3.5 h-3.5 text-blue-600 dark:text-blue-400" />
-                  <span>Default Super Admin: <strong>rajesh.sharma@inboxerp.com</strong></span>
+                  <span>Default Super Admin: <strong>rajesh.sharma@gangaerp.com</strong></span>
                 </div>
                 <div className="flex items-center gap-1.5 text-slate-400 dark:text-slate-500">
                   <Layers className="w-3.5 h-3.5" />
@@ -412,7 +412,7 @@ export const LoginPage: React.FC = () => {
 
       {/* Footer */}
       <footer className="w-full border-t border-slate-200 dark:border-slate-800 bg-white/60 dark:bg-slate-900/60 py-3 px-4 text-center text-xs text-slate-500 dark:text-slate-400">
-        Enterprise ERP Solution – Demo / POC • High-performance in-memory state engine • All workflows synchronized
+        Ganga ERP Solution – Demo / POC • High-performance in-memory state engine • All workflows synchronized
       </footer>
     </div>
   );
